@@ -9,7 +9,7 @@ public class TestJunit {
     MyDate d2 = new MyDate(2015, 1, 1);
     MyDate d3 = new MyDate(2016, 2, 1);
     MyDate d4 = new MyDate(2015, 12, 1);
-    MyDate d5 = new MyDate(2016, 4, 30);
+    MyDate d5 = new MyDate(2015, 4, 30);
     
     @Test
     public void Test1(){
@@ -23,11 +23,11 @@ public class TestJunit {
     
     @Test
     public void Test3(){
-        assertEquals(335, d2.daysTo(d4));
+        assertEquals(331, d2.daysTo(d4));
     }    
     
     @Test
     public void Test4(){
-        assertEquals(150, d4.daysTo(d5));
+        assertEquals(210, d4.daysTo(d5));
     }
 }
